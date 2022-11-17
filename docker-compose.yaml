@@ -26,16 +26,7 @@ services:
       MYSQL_PASSWORD: simpeg
 
       
-  phpmyadmin_1:
-    image: phpmyadmin
-    ports:
-      - 8081:8080
-    links:
-      - db
-    environment:
-      - PMA_ARBITARY=1
-      - PMA_PORT=3306
-      - PMA_HOST=db
+ 
 
 volumes:
   mysql-data:
